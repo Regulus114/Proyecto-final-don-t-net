@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Razengan.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   
+    <style type="text/css">
+        .auto-style3 {
+            width: 13%;
+            height: 102%;
+        }
+        .auto-style4 {
+            width: 23%;
+            height: 102%;
+        }
+        .auto-style7 {
+            height: 102%
+        }
+        .auto-style9 {
+            width: 5%;
+            height: 102%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager runat="server">
+                <Scripts>
+                    <asp:ScriptReference Path="~^/Scripts/Bootstrap.min.js" />
+                    <asp:ScriptReference Path="~/Scripts/jquery-2.1.4.min.js" />
+                </Scripts>
+            </asp:ScriptManager>
+            <table width = "100%" height = "100%" border = "1px">
+
+                     <table width = "100%" border = "1px" class="table">
+                             <tr width = "100%" >
+                                 <td class="auto-style3" >
+           
+                                     <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/ele.png" Height="65px" Width="175px" class="img-fluid" alt="Responsive image" />
+                                 </td>
+                                 <td class="auto-style9">
+                                    <asp:LinkButton runat="server" ID="Link1" Text="Home"  class="btn btn-outline-secondary" OnClick="lnk1_Click" Height="35px" Width="100px"/>
+                                 </td>
+                                 <td class="auto-style9">
+                                    <asp:LinkButton runat="server" ID="Link2"  Text="Bolsas"  class="btn btn-outline-secondary" OnClick="lnk2_Click" Height="35px" Width="100px"/>
+                                </td>
+                                <td class="auto-style4">
+                                    <asp:LinkButton runat="server" ID="Link3"  Text="About us"  class="btn btn-outline-secondary" OnClick="lnk3_Click" Height="35px" Width="100px"/>
+                                </td>
+                                <td class="auto-style9">
+                              
+                                    <asp:LinkButton runat="server" ID="Link4"  Text="Registrarse"  class="btn btn-secondary" OnClick="lnk4_Click" Height="35px" Width="110px"/>
+                                </td>
+                                <td width = "20%" class="auto-style7">
+                                    <asp:LinkButton runat="server" ID="Link5"  Text=" Iniciar 
+                                        sesion"  class="btn btn-dark" OnClick="lnk5_Click" Height="35px" Width="150px"/>
+                                </td>
+                             </tr>
+                     </table>
+                </tr>
+
+                <tr width = "100%" height = "80%">
+                    <td width = "100%" height = "100%">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                 
+                <tr width = "100%" height = "10%" >
+                    <td width = "100%" height = "100%" >&nbsp;<center>
+                            
+                        <h2 class="text-light bg-dark">®2021 Equipo L</h2>
+                        </center> 
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </div>
+    </form>
+</body>
+</html>
